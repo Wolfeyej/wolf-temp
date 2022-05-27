@@ -178,6 +178,9 @@
 					* FIELD：可以作用于成员变量上
 			* @Retention：描述注解被保留的阶段
 				* @Retention(RetentionPolicy.RUNTIME)：当前被描述的注解，会保留到class字节码文件中，并被JVM读取到
+				source：注解只保留在源文件，当Java文件编译成class文件的时候，注解被遗弃；被编译器忽略
+				class：注解被保留到class文件，但jvm加载class文件时候被遗弃，这是默认的生命周期
+				runtime：注解不仅被保存到class文件中，jvm加载class文件之后，仍然存在
 			* @Documented：描述注解是否被抽取到api文档中
 			* @Inherited：描述注解是否被子类继承
 
