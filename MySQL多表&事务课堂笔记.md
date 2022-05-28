@@ -469,9 +469,10 @@
 
 		2. 权限管理：
 			1. 查询权限：
-				-- 查询权限
+				-- 查询权限（权限说明：https://blog.csdn.net/linuxheik/article/details/53545837）
 				SHOW GRANTS FOR '用户名'@'主机名';
 				SHOW GRANTS FOR 'lisi'@'%';
+				
 
 			2. 授予权限：
 				-- 授予权限
